@@ -1,5 +1,5 @@
 /* Typical comparison function */
-let defaultCompare = (a, b) =>
+const defaultCompare = (a, b) =>
   a > b ? 1 : (a < b ? -1 : 0);
 
 /* Version 1:
@@ -7,7 +7,7 @@ let defaultCompare = (a, b) =>
     Fixed memory
     Loops
 */
-let binarySearchWithLoops = (array, element, compare = defaultCompare) => {
+const binarySearchWithLoops = (array, element, compare = defaultCompare) => {
     let left = 0;
     let right = array.length - 1;
 
